@@ -4,7 +4,6 @@
 
 import telebot
 import config
-from telebot import types
 
 # Ассоциируем переменную bot с нашим токеном
 bot = telebot.TeleBot(config.token)
