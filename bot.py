@@ -13,10 +13,10 @@ bot = telebot.TeleBot(config.token)
 
 @bot.message_handler(commands = ['start'])
 def send_welcome(message):
-  bot.send_message(message.chat.id, 'Salem! Men Zhanar fotostudiasynyn botymin! Zakaz beru ushin tandanyz\n')
+    bot.send_message(message.chat.id, 'Salem! Men Zhanar fotostudiasynyn botymin! Zakaz beru ushin tandanyz\n')
 
 
 # —— РЕЖИМ ОЖИДАНИЯ СООБЩЕНИЙ ——
 if __name__ == '__main__':
-  print("start")
-  bot.polling(none_stop=True)
+    print("start")
+    bot.polling(none_stop=True)
